@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5-2-1.html</title>
+</head>
+<body>
+    <script>
+        //콜백 함수 선언
+        function callThreeTimes(함수) {
+            for (let i=0; i<3; i++) {
+                함수(i); // print(i) 함수 실행
+            }
+        }
+
+
+        //콜백 함수 호출 => 매개변수에 함수를 넣어준다.
+        callThreeTimes(function(i){
+            console.log(`함수 호출`);
+        });
+    </script>
+</body>
+</html>
